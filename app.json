@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "FuelTrack",
+    "slug": "fueltrack",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.fueltrack.app"
+    },
+    "android": {
+      "package": "com.fueltrack.app",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "FuelTrack benötigt die Kamera, um Produkt-Barcodes zu scannen.",
+          "barcodeScannerEnabled": true
+        }
+      ],
+      "expo-status-bar"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "94e2ce4a-1374-4ab2-b6db-eb50053b0acd"
+      }
+    },
+    "owner": "peropopppps-team"
+  }
+}
